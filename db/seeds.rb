@@ -3,5 +3,6 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+  # movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+  movies = Place.create([{ name: 'Star Wars', deta: 'ome' }, { name: 'Lord of the Rings', deta: ' omg' }])
 #   Character.create(name: 'Luke', movie: movies.first)

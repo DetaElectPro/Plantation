@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'place/index'
+  get 'place/show'
+  get 'place/new'
+  get 'place/edit'
   get 'welcome/index'
 
   resources :articles
