@@ -1,5 +1,7 @@
 class UsersController < ApplicationApiController
   before_action :authorize_request, except: :create
+  before_action :find_user, except: %i[create index]
+
 
   # GET /users
   def index
@@ -35,7 +37,9 @@ class UsersController < ApplicationApiController
   # DELETE /users/{username}
   def destroy
     @user.destroy
-  end #end of delete user
+  end
+
+  #end of delete user
 
   private
 
@@ -43,7 +47,9 @@ class UsersController < ApplicationApiController
     @user = User.find_by_username!(params[:_username])
   rescue ActiveRecord::RecordNotFound
     render json: {errors: 'User not found'}, status: :not_found
-  end #end of find user
+  end
+
+  #end of find user
 
   def user_params
     params.permit(
