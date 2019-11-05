@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'place/edit'
   get 'welcome/index'
 
-  resources :articles
+  resources :place
   
   root 'welcome#index'
 

@@ -5,8 +5,9 @@ class PlaceController < ApplicationController
   end
 
   def show
-    @id =params[:_id]
+    @id =params[:id]
     @place = Place.find_by(id: @id)
+    render json: @place, status: :ok
   end
 
   def new
