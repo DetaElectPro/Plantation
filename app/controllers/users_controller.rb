@@ -32,4 +32,7 @@ class UsersController < ApplicationApiController
     end
   end
 
+  def delete
+
+  end
 end
