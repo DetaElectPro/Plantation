@@ -40,6 +40,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activestorage (v6.0.0, ruby-2.6.4-p104) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v6.0.0, ruby-2.6.4-p104) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.7.0, ruby-2.6.4-p104) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.13, ruby-2.6.4-p104) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, ruby-2.6.4-p104) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.4.5, ruby-2.6.4-p104) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, ruby-2.6.4-p104) [gem]" level="application" />
@@ -54,6 +55,7 @@
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, ruby-2.6.4-p104) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.6.0, ruby-2.6.4-p104) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.9.1, ruby-2.6.4-p104) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jwt (v2.2.1, ruby-2.6.4-p104) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.2.3, ruby-2.6.4-p104) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.1, ruby-2.6.4-p104) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="marcel (v0.3.3, ruby-2.6.4-p104) [gem]" level="application" />
