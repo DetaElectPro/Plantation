@@ -3,7 +3,7 @@ class AuthenticationController < ApplicationApiController
 
   # POST /auth/login
   def login
-    @user = User.find_by_email(params[:email])
+    @user = User.find_by_phone(params[:phone])
     if @user&.authenticate(params[:password])
       token = JsonWebToken.encode(user_id: @user.id)
       time = Time.now + 24.hours.to_i
@@ -17,6 +17,6 @@ class AuthenticationController < ApplicationApiController
   private
 
   def login_params
-    params.permit(:email, :password)
+    params.permit(:phone, :password)
   end
 end
