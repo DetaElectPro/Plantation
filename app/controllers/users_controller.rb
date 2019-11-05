@@ -19,7 +19,7 @@ class UsersController < ApplicationApiController
     if @user.save
       render json: @user, status: :created
     else
-      render json: { errors: @user.errors.full_messages },
+      render json: {errors: @user.errors.full_messages},
              status: :unprocessable_entity
     end
   end
@@ -27,7 +27,7 @@ class UsersController < ApplicationApiController
   # PUT /users/{username}
   def update
     unless @user.update(user_params)
-      render json: { errors: @user.errors.full_messages },
+      render json: {errors: @user.errors.full_messages},
              status: :unprocessable_entity
     end
   end
@@ -35,6 +35,20 @@ class UsersController < ApplicationApiController
   # DELETE /users/{username}
   def destroy
     @user.destroy
-  end
+  end #end of delete user
 
-end
+  private
+
+  def find_user
+    @user = User.find_by_username!(params[:_username])
+  rescue ActiveRecord::RecordNotFound
+    render json: {errors: 'User not found'}, status: :not_found
+  end #end of find user
+
+  def user_params
+    params.permit(
+        :avatar, :name, :username, :email, :password, :password_confirmation
+    )
+  end #end of userParams
+
+end #end of class
