@@ -5,7 +5,7 @@ class PlaceController < ApplicationController
   end
 
   def show
-    @id =params[:id]
+    @id = params[:id]
     @place = Place.find_by(id: @id)
     render json: @place, status: :ok
   end
@@ -15,4 +15,12 @@ class PlaceController < ApplicationController
 
   def edit
   end
+
+  private
+
+  def place_params
+    params.permit(
+        :name, :description, :logo, :latitude, :longitude
+    )
+  end #end of placeParam
 end
