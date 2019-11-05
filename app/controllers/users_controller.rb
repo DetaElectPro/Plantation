@@ -7,6 +7,11 @@ class UsersController < ApplicationApiController
     render json: @users, status: :ok
   end
 
+  # GET /users/{username}
+  def show
+    render json: @user, status: :ok
+  end
+
 
   # POST /users
   def create
