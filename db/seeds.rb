@@ -9,7 +9,8 @@ User.create([
                     username: 'Admin',
                     phone: '0122884466',
                     password: 'admin12'
-                }, {name: 'Omer Ali',
+                }, {
+                    name: 'Omer Ali',
                     username: 'Owner',
                     phone: '0114847667',
                     password: '123456'
