@@ -16,7 +16,7 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get store" do
+  test "should get new" do
     get product_store_url
     assert_response :success
   end

@@ -8,6 +8,6 @@ class ProductController < ApplicationController
   def show
   end
 
-  def store
+  def new
   end
 end
