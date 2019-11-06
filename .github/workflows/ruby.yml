@@ -6,7 +6,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-      run: |
+      run:
         apt-get install libsqlite3-dev
 
 
