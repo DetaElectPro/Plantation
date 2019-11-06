@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'product/index'
+  get 'product/edit'
+  get 'product/show'
+  get 'product/store'
   get 'place/index'
   get 'place/show'
   get 'place/new'
@@ -10,6 +14,10 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   Rails.application.routes.draw do
+  get 'product/index'
+  get 'product/edit'
+  get 'product/show'
+  get 'product/store'
     resources :users, param: :_username
     post '/auth/login', to: 'authentication#login'
     get '/*a', to: 'application#not_found'

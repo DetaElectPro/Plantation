@@ -3,6 +3,8 @@ class CreatePlaces < ActiveRecord::Migration[6.0]
     create_table :places do |t|
       t.string :name
       t.string :description
+      t.string :address
+      t.string :phone
       t.string :logo
       t.string :latitude
       t.string :longitude
