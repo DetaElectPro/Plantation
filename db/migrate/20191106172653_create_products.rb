@@ -5,7 +5,7 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.string :type
       t.float :price
       t.string :image
-      t.integer :available.empty?,
+      t.integer :available
       t.belongs_to :place
       t.timestamps
     end
